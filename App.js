@@ -2,8 +2,11 @@ Ext.define('CustomApp', {
     extend: 'Rally.app.App',
     componentCls: 'app',
 
-    defectStore: undefined,
-    myGrid: undefined,
+    defectStore: undefined,		// The data from Rally
+    myGrid: undefined,			// The UI grid
+    pulldownContainer: undefined,	// The UI "box" for pull down controls
+    iterComboBox: undefined,		// Iteration dropdown combo box control
+    severityComboBox: undefined,	// Severity dropdown combo box control
 
     // ---------------------------------------
     // The Launch Function, implicitly called
